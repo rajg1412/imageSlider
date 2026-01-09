@@ -1,70 +1,70 @@
-# Getting Started with Create React App
+# Image Viewer Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Hey! This is a simple image viewer app I built using React. It lets you browse through images with some cool features like zooming, filtering, and navigation controls.
 
-## Available Scripts
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- **Main image viewer** with previous/next navigation
+- **Thumbnail gallery** that shows all images at once
+- **Zoom controls** - zoom in, zoom out, or reset to 100%
+- **Filter by orientation** - show only landscape or portrait images
+- **Filter by size** - filter images by large, medium, or small
+- **Progress indicators** showing which image you're currently viewing
+- Clean, dark-themed UI with pink accent borders
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## How to run it
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+First, make sure you have Node.js installed on your computer. Then:
 
-### `npm test`
+1. Clone or download this project
+2. Open terminal and navigate to the project folder
+3. Install dependencies:
+   ```
+   npm install
+   ```
+4. Start the app:
+   ```
+   npm start
+   ```
+5. It should open automatically in your browser at `http://localhost:3000`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+If it doesn't open automatically, just paste that URL into your browser.
 
-### `npm run build`
+## Project structure
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Here's how the files are organized:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+image-viewer/
+├── public/
+│   └── index.html
+├── src/
+│   ├── ImageViewer.js      (main component with all the logic)
+│   ├── ImageViewer.css     (all the styling)
+│   ├── App.js              (root component)
+│   └── index.js            (entry point)
+├── package.json
+└── README.md
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The main code is in `ImageViewer.js` and all the styles are in `ImageViewer.css`. I kept it simple - no fancy frameworks or libraries, just React and CSS.
 
-### `npm run eject`
+## Tech stack
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **React** - for building the UI and handling state
+- **CSS** - for styling (no Tailwind or other CSS frameworks)
+- **Unsplash API** - for loading sample images
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## How to use
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+1. **Navigate images**: Click the left/right arrow buttons or click any thumbnail
+2. **Zoom**: Use the zoom buttons at the bottom - minus to zoom out, plus to zoom in, or click the percentage to reset
+3. **Filter by orientation**: Use the "Do not filter" dropdown to show only landscape or portrait images
+4. **Filter by size**: Use the "ALL" dropdown to filter by image size
+5. **Combine filters**: You can use both filters together for more specific results
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+The file counter at the bottom shows how many images are currently displayed versus the total number available.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you
