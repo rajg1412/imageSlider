@@ -66,14 +66,13 @@ const ImageViewer = () => {
   const [zoom, setZoom] = useState(100);
   const [sizeFilter, setSizeFilter] = useState('ALL');
 
-  // Filter images based on orientation and size
   const filteredImages = images.filter(img => {
     const matchesOrientation = filter === 'ALL' || img.orientation === filter;
     const matchesSize = sizeFilter === 'ALL' || img.size === sizeFilter;
     return matchesOrientation && matchesSize;
   });
 
-  // Get the current image from filtered array
+ 
   const displayImages = filteredImages.length > 0 ? filteredImages : images;
   const safeCurrentIndex = currentIndex >= displayImages.length ? 0 : currentIndex;
 
@@ -114,7 +113,7 @@ const ImageViewer = () => {
 
   const handleSizeFilterChange = (newSize) => {
     setSizeFilter(newSize);
-    setCurrentIndex(0); // Reset to first image when size filter changes
+    setCurrentIndex(0); 
     console.log('Size filter changed to:', newSize);
   };
 
